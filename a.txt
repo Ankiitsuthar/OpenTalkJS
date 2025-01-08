@@ -1,1 +1,3 @@
-Python is a high-level, interpreted programming language that was developed by Guido van Rossum. It is widely used for building software applications, creating web and server-based applications, scripting, data manipulation, machine learning, interactive graphics, web development, and more. Python has become one of the most popular languages in the world and has been adopted by millions of developers around the world.
+Java (pronounced "ja-da") is an object-oriented programming language designed by Guido van Rossum in the late 1980s for use on Apple's Macintosh computers. It was originally developed as a high-level, object-oriented computer language that could be used with any form of computer.
+
+In this document, we'll discuss what Java is, its history, different features and languages it can run on, how to write code in Java, and many other topics related to Java.
