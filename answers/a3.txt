@@ -1,0 +1,63 @@
+In Python, the official documentation for the `requests` library is available on GitHub. You can find it here: https://docs.python-requests.org
+
+Here's an example of a basic document:
+
+```
+# The requests module
+from requests import request
+
+url = "https://www.example.com"
+
+response = request(url)
+
+# The response type
+print(response.status_code)
+print(response.content)
+
+# Getting the response body
+body = response.json()
+
+# Checking if the response is successful
+if response.status_code == 200:
+    print("Response was successful")
+else:
+    print("Error occurred: {}".format(response.status_code))
+```
+
+To create a bug report, you can use the following format:
+
+```html
+<!-- Bug Report -->
+<div class="alert alert-danger">
+  <h4>Error</h4>
+  <p>The following line of code is causing an error:</p>
+  <pre><code>...(Your Code Here)</code></pre>
+</div>
+
+<!-- Title and Message -->
+<h2>Title</h2>
+<p>Line(s) You Are Trying To Fix.</p>
+
+<!-- Message-->
+<h3>Message</h3>
+<p>(Optional: Add additional information if needed.)</p>
+
+<!-- Solutions or Workarounds -->
+<h3>Solutions or Workarounds</h3>
+<dl>
+    <dt>Different HTTP Method</dt>
+    <dd><code>{YOUR CODE HERE}</code></dd>
+</dl>
+
+<!-- Follow-up Steps and Screenshots (if applicable)-->
+<h3>Follow-Up Steps</h3>
+<dl>
+    <dt>*{Following steps here}*</dt>
+</dl>
+
+<!-- Expected Outcome or Improvement -->
+<h3>Expected Outcome</h3>
+<p>(Optional: Add additional information if you're suggesting a new way to fix the issue.)</p>
+```
+
+Note that the code format above is just an example and should be adapted based on your own requirements.
