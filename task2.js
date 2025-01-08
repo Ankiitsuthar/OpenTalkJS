@@ -1,15 +1,22 @@
-import fs from 'fs';
-
+import fs from 'fs/promises'; 
 import ollama from "ollama";
 
-const q = fs.readFileSync("q.txt", "utf8");
+async function chatWithOllama() {
+    try {
+        const q = await fs.readFile("q.txt", "utf8"); 
 
+        const response = await ollama.chat({
+            model: "qwen2:0.5b",
+            messages: [{ role: "user", content: q }],
+        });
 
-const response = await ollama.chat({
-    model: "qwen2:0.5b",
-    messages: [{ role: "user", content: q }],
-});
+        const a = response.message.content;
 
-const a = response.message.content;
+        await fs.writeFile("a.txt", a); 
+        console.log("Response saved to a.txt");
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
 
-fs.writeFileSync("a.txt", a);
+chatWithOllama();
