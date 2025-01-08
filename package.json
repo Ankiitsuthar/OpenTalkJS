@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "deasync": "^0.1.30",
     "ollama": "^0.5.11"
